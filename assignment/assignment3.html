@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .custom-image {
+        width: 100%;
+        /* เพิ่ม style อื่นๆ ต่อจากตรงนี้... */
+        border-radius: 5px;
+
+      }
+      .custom-image:hover {
+        /* เพิ่ม style อื่นๆ ต่อจากตรงนี้... */
+        opacity: 0.75;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Assignment-->
+    <!-- ปรับ src ของ image ให้แสดงภาพ assignment3_1.jpg, assignment3_2.jpg, assignment3_1=3.jpg -->
+    <!-- ปรับแต่ง class '.custom-image' ให้เป็นไปตามที่โจทย์ต้องการ  -->
+    <!-- ปรับกรอบรูปให้โค้งลงนิดนึง -->
+    <!-- ปรับ class custom-image:hover เพื่อให้เวลาท่ี User เอาเมาส์ชี้รูป จะปรับความโปร่งใส opacity:0.75 -->
+    <!-- https://www.w3schools.com/cssref/index.php -->
+    <div class="bg-gray-100">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+          <h2 class="text-2xl font-bold text-gray-900">Collections</h2>
+
+          <div
+            class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0"
+          >
+            <div class="group relative">
+              <img
+                src="assignment3_1.jpg"
+                alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
+                class="custom-image"
+              />
+              <h3 class="mt-6 text-sm text-gray-500">
+                <a href="#"> Desk and Office </a>
+              </h3>
+              <p class="text-base font-semibold text-gray-900">
+                Work from home accessories
+              </p>
+            </div>
+            <div class="group relative">
+              <img
+                src="assignment3_2.jpg"
+                alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
+                class="custom-image"
+              />
+              <h3 class="mt-6 text-sm text-gray-500">
+                <a href="#"> Self-Improvement </a>
+              </h3>
+              <p class="text-base font-semibold text-gray-900">
+                Journals and note-taking
+              </p>
+            </div>
+            <div class="group relative">
+              <img
+                src="assignment3_3.jpg"
+                alt="Collection of four insulated travel bottles on wooden shelf."
+                class="custom-image"
+              />
+              <h3 class="mt-6 text-sm text-gray-500">
+                <a href="#"> Travel </a>
+              </h3>
+              <p class="text-base font-semibold text-gray-900">
+                Daily commute essentials
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to HTML, CSS, and JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4">
+      <h1 class="text-center text-2xl font-bold">
+        Welcome to the World of Web Development
+      </h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6">
+      <!-- Introduction -->
+      <section class="mb-6">
+        <h2 class="text-xl font-semibold mb-2">What Makes a Website?</h2>
+        <p>
+          A website is created using three key technologies:
+          <strong>HTML</strong> for structure, <strong>CSS</strong> for styling,
+          and <strong>JavaScript</strong> for interactivity.
+        </p>
+      </section>
+
+      <!-- Example of HTML -->
+      <section class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">1. HTML (Structure)</h3>
+        <p>HTML defines the structure of a webpage. For example:</p>
+        <code class="block bg-gray-200 p-4 rounded mb-2">
+          &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        </code>
+        <p>Displays a title on your webpage.</p>
+      </section>
+
+      <!-- Example of CSS -->
+      <section class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">2. CSS (Styling)</h3>
+        <p>CSS adds styles to make the page look beautiful. For example:</p>
+        <code class="block bg-gray-200 p-4 rounded mb-2">
+          h1 { "color: blue; font-size: 24px;" }
+        </code>
+        <p class="text-blue-400 text-xl">This makes the text blue and larger.</p>
+      </section>
+
+      <!-- Example of JavaScript -->
+      <section class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">
+          3. JavaScript (Interactivity)
+        </h3>
+        <p>JavaScript makes the webpage interactive. For example:</p>
+        <button
+          id="js-button"
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Click Me!
+        </button>
+        <p id="js-output" class="mt-4 text-blue-600 font-semibold"></p>
+        <script>
+          document.getElementById("js-button").addEventListener("click", () => {
+            document.getElementById("js-output").textContent =
+              "You just clicked a button!";
+          });
+        </script>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+      <p>&copy; 2025 Web Development 101. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

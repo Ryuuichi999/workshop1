@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .custom-input {
+        width: 100%;
+        outline-style: solid;
+        /* เพิ่ม style อื่นๆ ต่อจากตรงนี้... */
+        padding: 8px;
+        outline-width: 1px; 
+        outline-color: #d1d5db; 
+        border-radius: 5px; 
+        
+      }
+      .custom-button {
+        width: 100%;
+        /* เพิ่ม style อื่นๆ ต่อจากตรงนี้... */
+        color: white;
+        font-weight: bold;
+        background-color: #4f46e5;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Assignment: ปรับแต่ง class '.custom-input' และ 'custom-button' ให้เป็นไปตามที่โจทย์ต้องการ -->
+    <!-- Hint for element: Input-->
+    <!-- เพิ่ม padding -->
+    <!-- ใช้้ style เหล่านี้ในการปรับแต่ง กรอบ/ขอบ ของ input: 'outline-style',  'outline-width', 'outline-color' -->
+    <!-- สีขอบ #d1d5db -->
+    <!-- Hint for element: Button-->
+    <!-- เพิ่ม padding -->
+    <!-- ปรับสี background เป็นสี #4f46e5 -->
+    <!-- ปรับสีตัวอักษรเป็นสีขาว -->
+    <!-- https://www.w3schools.com/cssref/index.php -->
+
+    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <img
+          class="mx-auto h-10 w-auto"
+          src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+          alt="Your Company"
+        />
+        <h2
+          class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900"
+        >
+          Sign in to your account
+        </h2>
+      </div>
+
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6" action="#" method="POST">
+          <div>
+            <label for="email" class="block text-sm/6 font-medium text-gray-900"
+              >Email address</label
+            >
+            <div class="mt-2">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                required
+                class="custom-input"
+                placeholder="enter your email"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between">
+              <label
+                for="password"
+                class="block text-sm/6 font-medium text-gray-900"
+                >Password</label
+              >
+              <div class="text-sm">
+                <a
+                  href="#"
+                  class="font-semibold text-indigo-600 hover:text-indigo-500"
+                  >Forgot password?</a
+                >
+              </div>
+            </div>
+            <div class="mt-2">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                autocomplete="current-password"
+                required
+                placeholder="enter your password"
+                class="custom-input"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button type="submit" class="custom-button">Sign in</button>
+          </div>
+        </form>
+
+        <p class="mt-10 text-center text-sm/6 text-gray-500">
+          Not a member?
+          <a
+            href="#"
+            class="font-semibold text-indigo-600 hover:text-indigo-500"
+            >Start a 14 day free trial</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

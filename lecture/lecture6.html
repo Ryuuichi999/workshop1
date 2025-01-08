@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Image Element Tutorial</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1,
+      h2 {
+        color: #0073e6;
+      }
+      .example {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+      }
+      .code {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: monospace;
+      }
+      img {
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Image Element Tutorial</h1>
+    <p>
+      The <code>&lt;img&gt;</code> element is used to embed images into a
+      webpage. Below are examples and explanations of how to use it.
+    </p>
+
+    <!-- Example 1 -->
+    <div class="example">
+      <h2>1. Basic Image Example</h2>
+      <p>Here’s how to add a simple image:</p>
+      <div class="code">
+        &lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"
+        /&gt;
+      </div>
+      <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example">
+      <h2>2. Image with Width and Height</h2>
+      <p>
+        You can specify the size of the image using the <code>width</code> and
+        <code>height</code> attributes:
+      </p>
+      <div class="code">
+        &lt;img src="https://via.placeholder.com/150" alt="Placeholder Image"
+        width="100" height="100" /&gt;
+      </div>
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Placeholder Image"
+        width="100"
+        height="100"
+      />
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example">
+      <h2>3. Importance of the Alt Attribute</h2>
+      <p>
+        The <code>alt</code> attribute provides alternative text for the image,
+        which is displayed if the image fails to load or for screen readers.
+      </p>
+      <div class="code">
+        &lt;img src="broken-link.jpg" alt="This image could not load" /&gt;
+      </div>
+      <img src="broken-link.jpg" alt="This image could not load" />
+    </div>
+
+    <!-- Example 4 -->
+    <div class="example">
+      <h2>4. Responsive Image Example</h2>
+      <p>
+        Using CSS, you can make an image responsive by setting its
+        <code>max-width</code> to <code>100%</code>:
+      </p>
+      <div class="code">
+        &lt;img src="https://via.placeholder.com/150" alt="Responsive Image"
+        style="max-width: 100%;" /&gt;
+      </div>
+      <img
+        src="https://via.placeholder.com/600x300"
+        alt="Responsive Image"
+        style="max-width: 100%"
+      />
+    </div>
+  </body>
+</html>

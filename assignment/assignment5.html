@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- List useful css from tailwind
+     https://tailwindcss.com/docs/display
+     https://tailwindcss.com/docs/width
+     https://tailwindcss.com/docs/height
+     https://tailwindcss.com/docs/padding
+     https://tailwindcss.com/docs/margin
+     https://tailwindcss.com/docs/flex
+     https://tailwindcss.com/docs/flex-direction
+     https://tailwindcss.com/docs/justify-content
+     https://tailwindcss.com/docs/align-items
+     https://tailwindcss.com/docs/font-size
+     https://tailwindcss.com/docs/font-weight
+     https://tailwindcss.com/docs/background-color
+     https://tailwindcss.com/docs/text-color
+      -->
+    <style></style>
+  </head>
+  <body class="h-screen flex">
+    <div class="flex w-full max-w-6xl h-full bg-black rounded-lg m-4">
+      <div class="flex-1 bg-gray-500 rounded-lg rounded-r-none relative">
+        <button
+          class="absolute top-2 right-2 text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-600">
+          ✕
+        </button>
+      </div>
+      <div
+        class="w-1/3 bg-white flex flex-col rounded-lg rounded-l-none border border-black ml-0">
+        <div
+          class="h-16 flex justify-between items-center px-4 bg-white rounded-t-lg font-bold">
+          Panel title
+        </div>
+        <div class="flex-1 p-4">
+          <div class="bg-gray-200 rounded-lg w-full h-full"></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

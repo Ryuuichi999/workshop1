@@ -1,0 +1,2 @@
+Vs Code Editor Software: https://code.visualstudio.com/download
+VS Code Plugin: Tailwind CSS IntelliSense
